@@ -1,11 +1,10 @@
 $(function() {
 	$('#font_input').append(
-		$('.font_form_base')
+		$('.font-form-base')
 		.clone()
-		.removeClass('font_form_base')
+		.removeClass('font-form-base')
 		.show()
 	);
-
 
     $('a.change_fonts').on('click', function(event) {
     	event.preventDefault();
@@ -16,11 +15,13 @@ $(function() {
     	setFonts();
     });
     
-    $(document).on('click', '.add_font', function() {
+    $(document).on('click', '.add_font', function(event) {
+    	event.preventDefault();
+    	
         $('#font_input').append(
-        	$('.font_form_base')
+        	$(event.target).parents('.font-form')
         	.clone()
-        	.removeClass('font_form_base')
+        	.removeClass('font-form-base')
         	.show()
         );
     });
