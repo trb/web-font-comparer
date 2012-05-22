@@ -1,0 +1,99 @@
+#menu {
+    height: 10%;
+    background-color: #555;
+    border-bottom: 1% solid #222;
+}
+
+#overlay {
+    width: 40%;
+    height: 60%;
+    margin-left: 20%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    padding: 2em;
+    background-color: #555;
+    overflow: auto;
+    color: #eee;
+}
+table {
+    border-collapse:collapse;
+    margin-bottom: 20px;
+}
+td, tr {
+    border: 1px solid #222;
+    padding: 2px;
+}
+input {
+    background-color: #eee;
+    color: #555;
+    padding: 2px;
+    border: 1px solid #fff;
+    height: 16px;
+    line-height: 16px;
+    font-size: 13px;
+    width: 180px;
+}
+input.short {
+    width: 50px;
+}
+button {
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+#wrapper {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 89%;
+    width: 100%;
+}
+a, a:visited, a:active, a:hover {
+    font-style: italic;
+    color: #eee;
+    text-decoration: none;
+}
+a:visited {
+    color: #eee;
+}
+a:active {
+    color: #999;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.comparision {
+    display: block;
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 450px;
+}
+h1 {
+    font-size: 36px;
+    display: block;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 1em;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+article {
+    margin-top: 1.5em;
+}
+article p {
+    margin-bottom: 1.5em;
+}
+p.summary {
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
