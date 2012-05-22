@@ -62,12 +62,12 @@ var setFonts = function() {
 		var comp = source.clone().removeClass('source');
 		var set = function(tag, name) {
             comp.find(tag).css({
-            	'font-family': fonts[name][0],
+            	'font-family': '"' + fonts[name][0] + '"',
             	'font-weight': fonts[name][1]
             });
 		}
         comp.css({
-        	'font-family': fonts['body'][0],
+        	'font-family': '"' + fonts['body'][0] + '"',
         	'font-weight': fonts['body'][1]
         });
 		set('h1', 'headline');
