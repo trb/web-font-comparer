@@ -44,7 +44,7 @@ button {
 }
 
 #wrapper {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
     height: 89%;
     width: 100%;

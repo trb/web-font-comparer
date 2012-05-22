@@ -1,0 +1,290 @@
+<!doctype html public "✰">
+<html lang="en-us" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Font comparision</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="screen.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script type="text/javascript" src="fodal.min.js"></script>
+        <script type="text/javascript" src="comparer.js"></script>
+        <style type="text/css" id="fonts">
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <a href="#change_fonts" class="change_fonts">Change fonts</a>
+        </div>
+        <div id="overlay" style="display: none;">
+            <form action="#">
+                <div class="font-form font-form-base" style="display: none;">
+                    <label>Enter the &lt;link&gt; tag google gave you:</label>
+                    <input type="text" class="link" value="<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500|Bangers' rel='stylesheet' type='text/css'>" />
+                    <br />
+                    Available: <span class="available-fonts"></span>
+                    <br />
+                    <br />
+                    <p>
+                        Set the font familys and weight for each section.
+                        Specifity is downwards, if  you leave any option
+                        blank it will inherit it's parents font.
+                    </p>
+                    <br />
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Section</th>
+                                <th>Font-family</th>
+                                <th>Font-weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="body">
+                                <td>
+                                    Body
+                                </td>
+                                <td>
+                                    <input type="text" class="family" />
+                                </td>
+                                <td>
+                                    <input type="text" class="weight" />
+                                </td>
+                            </tr>
+                            <tr class="summary">
+                                <td>
+                                    Summary
+                                </td>
+                                <td>
+                                    <input type="text" class="family" />
+                                </td>
+                                <td>
+                                    <input type="text" class="weight" />
+                                </td>
+                            </tr>
+                            <tr class="sub-headline">
+                                <td>
+                                    Sub-headline
+                                </td>
+                                <td>
+                                    <input type="text" class="family" />
+                                </td>
+                                <td>
+                                    <input type="text" class="weight" />
+                                </td>
+                            </tr>
+                            <tr class="headline">
+                                <td>
+                                    Headline
+                                </td>
+                                <td>
+                                    <input type="text" class="family" />
+                                </td>
+                                <td>
+                                    <input type="text" class="weight" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="add_font" href="#add_font">Add another font comparision</a>
+                </div>
+                <div id="font_input">
+                    <div class="font-form">
+                        <label>Enter the &lt;link&gt; tag google gave you:</label>
+                        <input type="text" class="link" value="<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500|Bangers' rel='stylesheet' type='text/css'>" />
+                        <br />
+                        Available: <span class="available-fonts"></span>
+                        <br />
+                        <br />
+                        <p>
+                            Set the font familys and weight for each section.
+                            Specifity is downwards, if  you leave any option
+                            blank it will inherit it's parents font.
+                        </p>
+                        <br />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>Font-family</th>
+                                    <th>Font-weight</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="body">
+                                    <td>
+                                        Body
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Ubuntu" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="300" />
+                                    </td>
+                                </tr>
+                                <tr class="summary">
+                                    <td>
+                                        Summary
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Ubuntu" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="500" />
+                                    </td>
+                                </tr>
+                                <tr class="sub-headline">
+                                    <td>
+                                        Sub-headline
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Bangers" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="400" />
+                                    </td>
+                                </tr>
+                                <tr class="headline">
+                                    <td>
+                                        Headline
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Bangers" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="400" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="add_font" href="#add_font">Add another font comparision</a>
+                    </div>
+                    <div class="font-form">
+                        <label>Enter the &lt;link&gt; tag google gave you:</label>
+                        <input type="text" class="link" value="<link href='http://fonts.googleapis.com/css?family=Playball|Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>" />
+                        <br />
+                        Available: <span class="available-fonts"></span>
+                        <br />
+                        <br />
+                        <p>
+                            Set the font familys and weight for each section.
+                            Specifity is downwards, if  you leave any option
+                            blank it will inherit it's parents font.
+                        </p>
+                        <br />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>Font-family</th>
+                                    <th>Font-weight</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="body">
+                                    <td>
+                                        Body
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Goudy Bookletter 1911" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="400" />
+                                    </td>
+                                </tr>
+                                <tr class="summary">
+                                    <td>
+                                        Summary
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Goudy Bookletter 1911" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="bold" />
+                                    </td>
+                                </tr>
+                                <tr class="sub-headline">
+                                    <td>
+                                        Sub-headline
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Playball" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="400" />
+                                    </td>
+                                </tr>
+                                <tr class="headline">
+                                    <td>
+                                        Headline
+                                    </td>
+                                    <td>
+                                        <input type="text" class="family" value="Playball" />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="weight" value="400" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="add_font" href="#add_font">Add another font comparision</a>
+                    </div>
+                </div>
+                <button type="button" class="close">Close</button>
+            </form>
+        </div>
+        <div class="comparision source" style="display: none;">
+            <h1>Typography is the art and technique of arranging type</h1>
+            <p class="summary">
+                 The arrangement of type involves the selection of typefaces,
+                 point size, line length, leading (line spacing), adjusting the
+                 spaces between groups of letters (tracking) and adjusting the
+                 space between pairs of letters (kerning). In modern times, typography
+                 has been put into motion—in film, television and
+                 online broadcasts—to add emotion to mass communication.
+                 Until the Digital Age, typography was a specialized
+                 occupation. Digitization opened up typography to new
+                 generations of visual designers and lay users, and it
+                 has been said that "typography is now something everybody
+                 does."
+            </p>
+            <article>
+                <p>
+                    In traditional typography, text is composed to create a
+                    readable, coherent, and visually satisfying whole that
+                    works invisibly, without the awareness of the reader. Even
+                    distribution of typeset material, with a minimum of
+                    distractions and anomalies, is aimed at producing clarity
+                    and transparency.
+                </p>
+                
+                <h2>
+                    Readability and legibility
+                </h2>
+                <p>
+                    Legibility is primarily the concern of the typeface designer, to ensure that each individual character or glyph is unambiguous and distinguishable from all other characters in the font. Legibility is also in part the concern of the typographer to select a typeface with appropriate clarity of design for the intended use at the intended size. An example of a well-known design, Brush Script, contains a number of illegible letters since many of the characters can be easily misread especially if seen out of textual context.
+                </p>
+                <p>
+                    Readability is primarily the concern of the typographer or information designer. It is the intended result of the complete process of presentation of textual material in order to communicate meaning as unambiguously as possible. A reader should be assisted in navigating around the information with ease, by optimal inter-letter, inter-word and particularly inter-line spacing, coupled with appropriate line length and position on the page, careful editorial “chunking” and choice of the text architecture of titles, folios, and reference links.
+                </p>
+                
+                <h2>
+                    Advertising
+                </h2>
+                <p>
+                    Typography has long been a vital part of promotional material and advertising. Designers often use typography to set a theme and mood in an advertisement; for example using bold, large text to convey a particular message to the reader.
+                </p>
+                <p>
+                    Type is often used to draw attention to a particular advertisement, combined with efficient use of color, shapes and images. Today, typography in advertising often reflects a company's brand. Fonts used in advertisements convey different messages to the reader, classical fonts are for a strong personality, while more modern fonts are for a cleaner, neutral look. Bold fonts are used for making statements and attracting attention.
+                </p>
+                
+                <a href="http://en.wikipedia.org/wiki/Typography" style="padding: 2px; background-color: #555;">Copied in parts from Wikipedia</a>
+            </article>
+        </div>
+        <div id="wrapper">
+        </div>
+        
+        <script type="text/javascript">
+            setFonts();
+        </script>
+    </body>
+</html>
